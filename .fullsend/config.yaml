@@ -10,6 +10,3 @@ tracker:
                 - fullsend-ai/fullsend
                 - fullsend-ai/agents
 runtime: dummy
-agents:
-    - name: triage
-      trigger: event.entity.kind == "work_item" && event.transition.kind == "comment_added" && has(event.transition.comment.command) && event.transition.comment.command == "/fs-triage" && event.actor.kind == "human"
